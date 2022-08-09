@@ -1,0 +1,195 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    display: inline-block;
+    width: 448px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-text);
+
+    margin-bottom: 12px;
+  }
+  &__group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    display: inline-block;
+    margin-bottom: 4px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: var(--secondary-text);
+  }
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    border: 0;
+    cursor: pointer;
+    transition: fill var(--anim-fast);
+  }
+
+  &__input {
+    display: inline-block;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+
+    fill: var(--main-text);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color var(--anim-fast);
+    cursor: pointer;
+  }
+  &__icon:active {
+    fill: var(--accent);
+  }
+  &__modal-comment:hover,
+  &__modal-comment:focus,
+  &__input:hover,
+  &__input:focus {
+    border: 1px solid var(--accent);
+    outline: 0;
+    border-radius: 4px;
+  }
+  &__input:hover + .form__icon {
+    fill: var(--accent);
+    /* outline: 0; */
+  }
+  &__input:focus + .form__icon {
+    fill: var(--accent);
+  }
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &__label-comment {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+
+    color: var(--secondary-text);
+  }
+
+  &__modal-comment {
+    width: 100%;
+
+    padding: 12px 16px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color var(--anim-fast);
+  }
+  &__comment-text::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &__btn--forum {
+    display: inline-flex;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+    padding-left: 56px;
+    border: 0;
+    background: var(--accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--anim-fast);
+  }
+  &__btn--text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
+
+    color: var(--light-text);
+  }
+  &__btn--text:hover,
+  &__btn--text:focus {
+    color: var(--lidht-bg-ol);
+  }
+  &__btn--forum:hover,
+  &__btn--forum:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &__form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 30px;
+  }
+  &__icon-registraat {
+    display: inline-block;
+
+    top: 50%;
+    left: 18px;
+    border: 0;
+    cursor: pointer;
+    transition: fill var(--anim-fast);
+  }
+  &__checkbox:checked + &__icon-registrat &__icon-uncheck {
+    opacity: 0;
+    transition: opacity var(--anim-fast);
+  }
+
+  &__icon-check {
+    opacity: 0;
+    fill: var(--main-text);
+    transition: opacity var(--anim-fast);
+  }
+
+  &__checkbox:checked + .form__icon-registrat .form__icon-check {
+    opacity: 1;
+  }
+
+  &__form-agreement--text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    user-select: none;
+    text-underline-position: under;
+    color: var(--secondary-text);
+  }
+  &__form-agreement-link {
+    color: var(--accent);
+  }
+}

@@ -1,0 +1,13 @@
+body {
+    font-family: var(--main-font);
+    color: var(--main-tex-ol);
+  }
+  .no-scroll {
+    overflow: hidden;
+  }
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+

@@ -1,0 +1,53 @@
+.modal {
+  display: block;
+  position: absolute;
+  width: 528px;
+  top: 221px;
+  padding: 40px;
+
+  background: var(--light-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+
+  opacity: 1;
+  transition: transform var(--anim-fast), opacity var(--anim-fast);
+
+  &__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    border-radius: 50%;
+    background: var(--light-text);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transition: opcity 250ms ease-out, visibility 250ms ease-out;
+  }
+  &__btn-icon {
+    transition: color var(--anim-fast);
+  }
+  &__btn-icon:hover,
+  &__btn-icon:focus {
+    fill: var(--accent);
+  }
+
+  &__btn-icon:active {
+    fill: var(--accent);
+  }
+}

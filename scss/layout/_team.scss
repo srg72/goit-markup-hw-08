@@ -1,0 +1,95 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-bg);
+
+  &__title {
+    margin-bottom: 50px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em c;
+
+    color: var(--main-text);
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    width: 270px;
+    height: 430px;
+    background-color: var(--light-text);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__photo {
+    margin-bottom: 30px;
+    border-bottom: none;
+    cursor: pointer;
+  }
+  &__persson {
+    margin-bottom: 10px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-text);
+  }
+
+  &__info {
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--secondary-text);
+
+    cursor: pointer;
+  }
+
+  &__sosial-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  &__sosial-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--light-text);
+    border-radius: 50%;
+    transition: color var(--anim-fast), fill var(--anim-fast),
+      background-color var(--anim-fast);
+  }
+  &__sosial-item:hover,
+  &__sosial-item:focus {
+    background-color: var(--accent);
+    outline: 0;
+  }
+  &__sosial-icon {
+    fill: var(--sosial-icon);
+    transition: fill var(--anim-fast);
+  }
+
+  &__sosial-link:hover &__sosial-icon {
+    fill: var(--light-text);
+  }
+  &__sosial-item:focus &__sosial-icon {
+    fill: var(--light-text);
+  }
+}

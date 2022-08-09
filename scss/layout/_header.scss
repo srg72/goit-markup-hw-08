@@ -1,0 +1,55 @@
+.header {
+  border-bottom: 1px solid var(--lidht-bg-ol);
+
+  &__mail,
+  &__phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text);
+    transition: color var(--anim-fast);
+  }
+  &__mail {
+    margin-right: 50px;
+  }
+
+  &__mail:hover,
+  &__phone:focus,
+  &__mail:focus,
+  &__phone:hover {
+    color: var(--accent);
+    outline: 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    margin-right: 93px;
+    outline: 0;
+    color: var(--accent);
+  }
+  &__logo--stud {
+    color: var(--main-tex-ol);
+  }
+
+  &__phone--icon,
+  &__mail--icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
