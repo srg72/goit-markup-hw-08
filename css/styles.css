@@ -39,7 +39,10 @@
 }
 
 .container {
-  width: 1200px;
+ .content {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
