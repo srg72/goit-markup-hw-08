@@ -705,6 +705,21 @@ p {
   fill: var(--lidht-bg-ol);
 }
 
+.menu-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .header {
   border-bottom: 1px solid var(--lidht-bg-ol);
 }
@@ -719,6 +734,11 @@ p {
   color: var(--secondary-text);
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
+}
+@media screen and (max-width: 767px) {
+  .header__mail, .header__phone {
+    display: none;
+  }
 }
 .header__mail {
   margin-right: 50px;
@@ -755,6 +775,7 @@ p {
 }
 
 .nav {
+  display: none;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -863,6 +884,11 @@ p {
   transition: color var(--anim-fast), -webkit-box-shadow var(--anim-fast);
   transition: color var(--anim-fast), box-shadow var(--anim-fast);
   transition: color var(--anim-fast), box-shadow var(--anim-fast), -webkit-box-shadow var(--anim-fast);
+}
+@media screen and (max-width: 767px) {
+  .hero__button {
+    display: none;
+  }
 }
 .hero__button--text {
   color: var(--light-text);
