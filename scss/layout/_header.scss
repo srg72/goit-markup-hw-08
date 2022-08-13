@@ -34,6 +34,10 @@
   &__container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    max-width: 480px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__logo {
@@ -44,9 +48,14 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
 
-    margin-right: 93px;
+    margin-right: auto;
     outline: 0;
     color: var(--accent);
+
+    @media screen and (min-width:1200px) {
+      margin-right: 93px;
+
+    }
   }
 
   &__logo--stud {
