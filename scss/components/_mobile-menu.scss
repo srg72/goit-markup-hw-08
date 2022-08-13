@@ -9,6 +9,8 @@
     cursor: pointer;
 }
 
+.menu-btn:active,
+.menu-btn:hover,
 .menu-btn:focus {
     fill: var(--accent);
 }
