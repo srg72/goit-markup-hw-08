@@ -5,9 +5,11 @@
     display: flex;
     gap: 30px;
   }
+
   &__img {
     position: relative;
   }
+
   &__text {
     margin-bottom: 50px;
     font-style: normal;
@@ -19,6 +21,7 @@
 
     color: var(--main-tex);
   }
+
   &__img--text {
     position: absolute;
     width: 100%;
@@ -40,5 +43,12 @@
     text-transform: uppercase;
 
     color: var(--light-text);
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+  .pictures {
+    display: none;
   }
 }
