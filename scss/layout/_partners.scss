@@ -1,6 +1,12 @@
 .partners {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__text {
     display: flex;
@@ -16,29 +22,48 @@
 
     color: var(--main-text);
   }
+
   &__list {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: var(--indent);
+
   }
 
   &__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    width: calc((100% - var(--indent)*(var(--feature) - 1))/var(--feature));
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - var(--indent)*(var(--items) - 1))/var(--items));
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - var(--indent)*(var(--company) - 1))/var(--company));
+    }
   }
-  &__item:last-child {
-    margin-right: 0;
-  }
+
   &__item--logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 226px;
     height: 92px;
     border: 1px solid var(--sosial-icon);
     border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+      width: 210px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+
+
   }
 
   &__item--logo {
@@ -56,6 +81,7 @@
   &__item--logo:hover &__icon {
     fill: var(--accent);
   }
+
   &__item--logo:focus &__icon {
     fill: var(--accent);
   }
