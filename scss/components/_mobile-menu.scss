@@ -93,7 +93,7 @@
     margin-bottom: 32px;
 }
 
-.mobile-socilas__item:not(:last-child) .mobile-socilas__link {
+.mobile-socials__item:not(:last-child) .mobile-socials__link {
 
     display: flex;
     padding-right: 10px;
@@ -101,7 +101,7 @@
 
 }
 
-.mobile-socilas__link {
+.mobile-socials__link {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -139,7 +139,7 @@
 }
 
 
-.mobile-socilas {
+.mobile-socials {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
