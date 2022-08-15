@@ -5,8 +5,7 @@
 
   &__title {
     display: inline-block;
-    max-width: 370px;
-    height: auto;
+    width: 370px;
 
     font-style: normal;
     font-weight: 700;
@@ -199,7 +198,6 @@
   }
 
   &__form-agreement--text {
-    width: 370px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
