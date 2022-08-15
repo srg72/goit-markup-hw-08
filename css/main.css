@@ -275,10 +275,10 @@ p {
 .modal {
   display: block;
   position: absolute;
-  width: 450px;
+  max-width: 450px;
   top: 221px;
   padding-top: 40px;
-  padding-left: 45px;
+  padding-left: 40px;
   padding-right: 28px;
   padding-bottom: 40px;
   background: var(--light-text);
@@ -297,7 +297,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
 }
 .modal__btn {
@@ -352,7 +352,7 @@ p {
 }
 .form__title {
   display: inline-block;
-  min-width: 377px;
+  max-width: 370px;
   height: auto;
   font-style: normal;
   font-weight: 700;
@@ -365,7 +365,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .form__title {
-    min-width: 448px;
+    width: 448px;
   }
 }
 .form__group {
@@ -1125,6 +1125,7 @@ p {
   transition: color var(--anim-fast), box-shadow var(--anim-fast), -webkit-box-shadow var(--anim-fast);
   cursor: pointer;
   outline: 0;
+  border: 0;
 }
 
 .hero-image__btn--text {

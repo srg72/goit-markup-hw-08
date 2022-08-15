@@ -1,11 +1,11 @@
 .modal {
   display: block;
   position: absolute;
-  width: 450px;
+  max-width: 450px;
 
   top: 221px;
   padding-top: 40px;
-  padding-left: 45px;
+  padding-left: 40px;
   padding-right: 28px;
   padding-bottom: 40px;
   background: var(--light-text);
@@ -21,7 +21,7 @@
   transition: transform var(--anim-fast), opacity var(--anim-fast);
 
   @media screen and (min-width:1200px) {
-    width: 528px;
+    max-width: 528px;
   }
 
   &__btn {
