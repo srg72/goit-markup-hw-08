@@ -4,6 +4,7 @@
 
   &__text {
     display: inline-block;
+    text-align: center;
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 700;
@@ -14,9 +15,13 @@
 
     color: var(--light-text);
   }
+
   &__footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
   &__input {
     width: 358px;
     height: 50px;
@@ -24,12 +29,14 @@
     padding-left: 16px;
     padding-bottom: 15px;
     margin-right: 12px;
+    margin-bottom: 20px;
     background-color: transparent;
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: border var(--anim-fast);
   }
+
   &__input-text::placeholder {
     font-style: normal;
     font-weight: 400;
@@ -39,6 +46,7 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
+
   &__btn-forum {
     width: 200px;
     height: 50px;
@@ -54,6 +62,7 @@
     cursor: pointer;
     transition: color var(--anim-fast) box-shadow var(--anim-fast);
   }
+
   &__btn-text {
     font-style: normal;
     font-weight: 700;
@@ -67,6 +76,7 @@
 
     color: var(--light-text);
   }
+
   &__icon {
     fill: var(--light-text);
     margin-left: 10px;
@@ -78,21 +88,25 @@
 
     color: var(--light-text);
   }
+
   &__input:hover,
   &__input:focus {
     outline: 0;
     color: var(--lidht-bg-ol);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
+
   &__btn-forum:hover,
   &__btn-forum:focus {
     outline: 0;
     color: var(--lidht-bg-ol);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
+
   &__btn-forum:hover &__icon {
     fill: var(--lidht-bg-ol);
   }
+
   &__icon:focus &__icon {
     fill: var(--lidht-bg-ol);
   }

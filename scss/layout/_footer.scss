@@ -1,22 +1,26 @@
 .footer {
   background: var(--main-bg-ol);
 
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   &__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    // align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
   }
 
   &__list {
-    margin-right: 70px;
+    // margin-right: 70px;
+    text-align: center;
   }
+
   &__address {
     display: flex;
     flex-direction: column;
-    max-width: 231px;
-    min-height: 80px;
+    // max-width: 231px;
+    // min-height: 80px;
+    text-align: center;
   }
 
   &__logo {
@@ -74,6 +78,7 @@
 
     color: var(--footer-contacts);
     transition: color var(--anim-fast);
+    margin-bottom: 60px;
   }
 
   &__mail:hover,
@@ -87,19 +92,27 @@
   /* sosial footer */
 
   .footer__sosial {
-    max-width: 210px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    // max-width: 210px;
     max-height: 80px;
-    margin-right: 93px;
+    // margin-right: 93px;
+    margin-bottom: 60px;
+
   }
+
   &__sosial-link {
     display: flex;
     align-items: center;
     gap: 10px;
   }
+
   &__link {
     display: flex;
     justify-content: center;
   }
+
   &__item {
     display: flex;
     align-items: center;
@@ -110,10 +123,12 @@
     border-radius: 50%;
     transition: background-color var(--anim-fast);
   }
+
   &__icon {
     fill: var(--light-text);
     transition: fill var(--anim-fast);
   }
+
   &__item:hover,
   &__item:focus {
     background-color: var(--accent);
@@ -123,6 +138,7 @@
   &__link:hover &__icon {
     fill: var(--light-text);
   }
+
   &__link:focus &__icon {
     fill: var(--light-text);
   }
@@ -139,5 +155,6 @@
     text-transform: uppercase;
 
     color: var(--light-text);
+
   }
 }
