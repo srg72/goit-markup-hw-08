@@ -1,10 +1,13 @@
 .modal {
   display: block;
   position: absolute;
-  width: 528px;
-  top: 221px;
-  padding: 40px;
+  width: 450px;
 
+  top: 221px;
+  padding-top: 40px;
+  padding-left: 45px;
+  padding-right: 28px;
+  padding-bottom: 40px;
   background: var(--light-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -16,6 +19,10 @@
 
   opacity: 1;
   transition: transform var(--anim-fast), opacity var(--anim-fast);
+
+  @media screen and (min-width:1200px) {
+    width: 528px;
+  }
 
   &__btn {
     position: absolute;
@@ -39,9 +46,11 @@
     pointer-events: initial;
     transition: opcity 250ms ease-out, visibility 250ms ease-out;
   }
+
   &__btn-icon {
     transition: color var(--anim-fast);
   }
+
   &__btn-icon:hover,
   &__btn-icon:focus {
     fill: var(--accent);
