@@ -585,6 +585,11 @@ p {
   text-transform: uppercase;
   color: var(--light-text);
 }
+@media screen and (min-width: 1200px) {
+  .subscription__text {
+    text-align: left;
+  }
+}
 .subscription__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1402,6 +1407,13 @@ p {
           flex-direction: column;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .footer__logo {
   font-family: var(--font-secondary);
   font-weight: 700;
@@ -1465,6 +1477,13 @@ p {
   display: flex;
   max-height: 80px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer__sosial {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .footer__sosial-link {
   display: -webkit-box;
