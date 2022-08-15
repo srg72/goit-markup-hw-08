@@ -1354,6 +1354,21 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 .footer__list {
   text-align: center;
 }
