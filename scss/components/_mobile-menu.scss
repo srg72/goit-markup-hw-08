@@ -14,8 +14,7 @@
 
 }
 
-.menu-btn:active,
-.menu-btn:hover,
+
 .menu-btn:focus {
     fill: var(--accent);
 }
@@ -83,7 +82,9 @@
     letter-spacing: 0.02em;
 
     color: var(--main-text);
+    cursor: pointer;
 }
+
 
 .mobile-nav__list:first-child {
     margin-bottom: auto;

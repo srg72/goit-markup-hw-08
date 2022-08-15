@@ -139,6 +139,15 @@
         <h2 class="pictures__text">Чем мы занимаемся</h2>
         <ul class="pictures__list list">
           <li class="pictures__img">
+            <picture class="pictures__img">
+              <source srcset="./images/activities/activity1.webp 1x, ./images/activities/activity1@2x.webp 2x"
+                media="(min-width: 1200px)" type="image/webp">
+              <source srcset="./images/activities/activity1.jpg 1x, ./images/activities/activity1@2x.jpg 2x"
+                media="(min-width: 1200px)">
+
+
+              <img src="images/activities/activity1.jpg" alt="Десктопные приложения" class="picture-img">
+            </picture>
             <img src="images\pictures\img-1@1x.jpg" alt="Десктопные приложения" width="370" />
             <h3 class="pictures__img--text">Десктопные приложения</h3>
           </li>
@@ -490,7 +499,7 @@
     <div class="menu-container">
       <ul class="mobile-nav__list list">
         <li class="mobile-nav__item">
-          <a href="./index.html" class="mobile-link mobile-link--active link">Студия</a>
+          <a href="index.html" class="mobile-link mobile-link--active link">Студия</a>
         </li>
         <li class="mobile-nav__item">
           <a href="./portfolio.html" class="mobile-link link">Портфолио</a>
@@ -505,7 +514,7 @@
         <a class="mobile-contacts__link mobile-contacts__mail link" href="mailto:info@devstudio.com">
           info@devstudio.com</a>
       </div>
-      <ul class="mobile-socilas list">
+      <ul class="mobile-socials list">
         <li class="mobile-socials__item">
           <a href="" class="mobile-socials__link link">Instagram</a>
         </li>
