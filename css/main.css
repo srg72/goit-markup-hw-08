@@ -276,6 +276,7 @@ p {
   display: block;
   position: absolute;
   max-width: 450px;
+  min-height: 609px;
   top: 221px;
   padding-top: 40px;
   padding-left: 40px;
@@ -298,6 +299,7 @@ p {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
+    min-height: 581px;
   }
 }
 .modal__btn {
