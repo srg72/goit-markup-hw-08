@@ -35,7 +35,7 @@
       <nav class="nav">
         <ul class="nav__list list">
           <li class="nav__item">
-            <a class="nav__link " href="./index.html">Студия</a>
+            <a class="nav__link link" href="./index.html">Студия</a>
           </li>
           <li class="nav__item">
             <a class="nav__link link nav__link--active link" href="./portfolio.html">Портфолио</a>
@@ -91,7 +91,18 @@
         <ul class="card-set list">
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="" width="370" alt="Веб-сайт" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-1_bg@1x.webp, images/portfolio/img-1_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-1_bg@1x.jpg, images/portfolio/img-1_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-1_md@1x.jpg, images/portfolio/img-1_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-1_sm@1x.jpg, images/portfolio/img-1_sm@1x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Веб-сайт" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -107,7 +118,18 @@
           </li>
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="./images/portfolio/imgphoto-2.jpg" alt="Дизайн" width="370" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-2_bg@1x.webp, images/portfolio/img-2_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-2_bg@1x.jpg, images/portfolio/img-2_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-2_md@1x.jpg, images/portfolio/img-2_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-2_sm@1x.jpg, images/portfolio/img-2_sm@2x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-2.jpg" alt=">Дизайн" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -125,7 +147,18 @@
           </li>
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="./images/portfolio/imgphoto-3.jpg" alt="Ресторан" width="370" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-3_bg@1x.webp, images/portfolio/img-3_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-3_bg@1x.jpg, images/portfolio/img-3_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-3_md@1x.jpg, images/portfolio/img-3_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-3_sm@1x.jpg, images/portfolio/img-3_sm@2x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-3.jpg" alt="Ресторан" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -143,7 +176,20 @@
           </li>
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="./images/portfolio/imgphoto-4.jpg" alt="Маркетинг" width="370" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-4_bg@1x.webp, images/portfolio/img-4_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-4_bg@1x.jpg, images/portfolio/img-4_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-4_md@1x.jpg, images/portfolio/img-4_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-4_sm@1x.jpg, images/portfolio/img-4_sm@2x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Маркетинг" />
+              </picture>
+              <img class="team__photo" src="" alt="" width="270" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -159,8 +205,18 @@
           </li>
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="./images/portfolio/imgphoto-5.jpg" alt="Приложение" width="370"
-                height="294" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-5_bg@1x.webp, images/portfolio/img-5_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-5_bg@1x.jpg, images/portfolio/img-5_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-5_md@1x.jpg, images/portfolio/img-5_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-5_sm@1x.jpg, images/portfolio/img-5_sm@2x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Приложение" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -176,7 +232,18 @@
           </li>
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="./images/portfolio/imgphoto-6.jpg" alt="Дизайн" width="370" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-6_bg@1x.webp, images/portfolio/img-6_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-6_bg@1x.jpg, images/portfolio/img-6_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-6_md@1x.jpg, images/portfolio/img-6_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-6_sm@1x.jpg, images/portfolio/img-6_sm@2x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Дизайн" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -187,14 +254,25 @@
             </div>
             <div class="card-set__border">
               <h3 lang="en" class="card-set__name">
-                Inspiration has no Borders
+                Inspiration has no Border7
               </h3>
               <p class="card-set__text">Веб-сайт</p>
             </div>
           </li>
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="./images/portfolio/imgphoto-7.jpg" alt="Издание" width="370" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-7_bg@1x.webp, images/portfolio/img-7_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-7_bg@1x.jpg, images/portfolio/img-7_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-7_md@1x.jpg, images/portfolio/img-7_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-7_sm@1x.jpg, images/portfolio/img-7_sm@2x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Издание" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -212,7 +290,18 @@
           </li>
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="./images/portfolio/imgphoto-8.jpg" alt="Проект" width="370" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-8_bg@1x.webp, images/portfolio/img-8_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-8_bg@1x.jpg, images/portfolio/img-8_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-8_md@1x.jpg, images/portfolio/img-8_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-8_sm@1x.jpg, images/portfolio/img-8_sm@2x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Проект" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -228,7 +317,18 @@
           </li>
           <li class="card-set__link">
             <div class="card-set__project">
-              <img class="card-set__image" src="./images/portfolio/imgphoto-9.jpg" alt="Приложение" width="370" />
+              <picture class="card-set__project">
+                <source srcset="images/portfolio/img-9_bg@1x.webp, images/portfolio/img-9_bg@2x.webp"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-9_bg@1x.jpg, images/portfolio/img-9_bg@2x.jpg"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="images/portfolio/img-9_md@1x.jpg, images/portfolio/img-9_md@2x.jpg"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/portfolio/img-9_sm@1x.jpg, images/portfolio/img-9_sm@2x.jpg"
+                  media="(max-width: 767px)" type="image/webp">
+
+                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Приложение" />
+              </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -264,7 +364,7 @@
         <ul class="list footer__sosial-link">
           <li class="footer__link">
             <a class="footer__item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Инстаграм">
-              <svg class="footer__icon" width="20" height="20"> -->
+              <svg class="footer__icon" width="20" height="20">
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
             </a>
