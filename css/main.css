@@ -80,6 +80,16 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .card-set {
   display: -webkit-box;
   display: -ms-flexbox;
