@@ -29,14 +29,8 @@
   <!-- Header section -->
   <header class="header" data-header>
     <div class="header__container container">
-
-      <a class="header__logo link" href="./index.html" lang="en">Web<span class="header__logo--stud">Studio</span>
+      <a class="header__logo link" href="#" lang="en">Web<span class="header__logo--stud">Studio</span>
       </a>
-      <buttom class="menu-btn" type="buttom" data-menu-open>
-        <svg width="40" height="40">
-          <use href="./images/icons.svg#menu_40pxmenu_1"></use>
-        </svg>
-      </buttom>
       <div class="header__top">
         <nav class="nav">
           <ul class="nav__list list">
@@ -51,7 +45,6 @@
               <a class="nav__link link" href="./index.html">Контакти</a>
             </li>
           </ul>
-
         </nav>
         <div class="header__contact list">
           <a class="header__maill link" href="mailto:info@devstudio.com">
@@ -66,6 +59,11 @@
           </li>
         </div>
       </div>
+      <button class="menu-btn" type="button" data-menu-open>
+        <svg class="menu-close-icon" width="40" height="40">
+          <use href="./images/icons.svg#menu_40pxmenu_1"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <!-- Main section -->
@@ -563,9 +561,9 @@
 
   <!-- Mobile menu -->
 
-  <div class="menu-overlay is-open">
+  <div class="menu-overlay is-open" data-menu>
     <div class="menu-container">
-      <button class="menu-btn" type="button">
+      <button class="menu-btn" type="button" data-menu-close>
         <svg class="menu-close-icon" width="40" height="40">
           <use href="./images/icons.svg#close_40px"></use>
         </svg>

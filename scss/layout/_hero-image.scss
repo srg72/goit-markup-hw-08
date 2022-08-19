@@ -3,7 +3,7 @@
     background-image: linear-gradient(to bottom,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero/img1-sm@1x.webp);
+        url(../../images/hero/img1-sm@1x.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,11 +52,13 @@
 @media screen and (min-width:768px) {
     .hero-text {
         margin-top: 80px;
+
     }
 }
 
 @media screen and (min-width:1200px) {
     .hero-text {
+        max-width: 696px;
         padding-top: 200px;
         padding-bottom: 200px;
     }
