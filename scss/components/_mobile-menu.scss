@@ -10,7 +10,12 @@
     cursor: pointer;
     background: transparent;
 
+}
 
+@media screen and (min-width:768px) {
+    .menu-btn {
+        display: none;
+    }
 }
 
 .menu-overlay {
@@ -31,6 +36,12 @@
     transform: translateX(100%)
 }
 
+// @media screen and (max-width:767px) {
+//     .menu-overlay {
+//         display: none;
+//     }
+// }
+
 .menu-container {
     display: flex;
     flex-direction: column;
@@ -39,9 +50,25 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+    background-color: var(--light-text);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 
-    // background-color: var(--light-text);
+    transition: transform var(--anim-fast);
+}
 
+.mobile-nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mobile-nav__list:nth-child(3n-1) {
+    margin-bottom: auto;
+}
+
+.mobile-contacts {
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile-link {
@@ -53,7 +80,60 @@
     color: var(--main-text);
 }
 
-.mobile-socials__item {
+.mobile-link--active {
+    color: var(--accent);
+}
 
-    Font size: 18px Line height: 22px Vertical align: Top Letter spacing: 2% Fill: Solid #2196F3
+.mobile-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+// .mobile-socials__item {}
+
+.mobile-socials__item:not(:last-child) {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+}
+
+.mobile-socials__link {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--accent);
+
+}
+
+.mobile-contacts__phone {
+    display: inline-block;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--accent);
+
+}
+
+.mobile-contacts__maill {
+    display: inline-block;
+    margin-bottom: 64px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text);
 }
