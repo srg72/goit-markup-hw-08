@@ -12,6 +12,11 @@
 
 }
 
+.menu-btn:active {
+    fill: var(--accent);
+    outline: 0;
+}
+
 @media screen and (min-width:768px) {
     .menu-btn {
         display: none;

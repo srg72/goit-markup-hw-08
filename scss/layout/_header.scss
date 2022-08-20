@@ -56,20 +56,19 @@
       display: flex;
       align-items: center;
 
-
     }
 
     @media screen and (min-width:768px) {
       .header {
-        min-width: 768px;
+        position: static;
       }
     }
 
-    @media screen and (min-width:768px) {
-      .header {
-        min-width: 768px;
-      }
-    }
+    // @media screen and (min-width:768px) {
+    //   .header {
+    //     min-width: 768px;
+    //   }
+    // }
 
     @media screen and (max-width:767px) {
       .header__top {
@@ -80,7 +79,12 @@
 
     .header__contact {
       display: flex;
+    }
 
+    .header__maill {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
     }
 
     .header__maill:hover,
@@ -117,7 +121,7 @@
 @media screen and (min-width:1200px) {
   .header__container {
     align-items: center;
-    width: auto;
+    max-width: 1200px;
   }
 }
 
