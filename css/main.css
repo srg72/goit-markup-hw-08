@@ -1163,14 +1163,22 @@ img {
 .hero-image {
   max-width: 768px;
   height: 400px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(images/hero/img-hd_1.webp), url(images/hero/img-hd_1@2x.webp);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(images/hero/img-hd_1.webp), url(images/hero/img-hd_1@2x.webp);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/img-hd_1.webp), url(../../images/hero/img-hd_1@2x.webp), url(../..images/hero/img-hd_1.jpg), url(../../images/hero/img-hd_1@2x.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/img-hd_1.webp), url(../../images/hero/img-hd_1@2x.webp), url(../..images/hero/img-hd_1.jpg), url(../../images/hero/img-hd_1@2x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--hero-bg);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-image {
+    max-width: 1600px;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/img-hd_2.webp), url(../../images/hero/img-hd_2@2x.webp), url(../..images/hero/img-hd_2.jpg), url(../../images/hero/img-hd_2@2x.jpg);
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/img-hd_2.webp), url(../../images/hero/img-hd_2@2x.webp), url(../..images/hero/img-hd_2.jpg), url(../../images/hero/img-hd_2@2x.jpg);
+  }
+}
 .hero-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,11 +1197,6 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .hero-text {
-    padding-top: 260px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero-text {
     max-width: 696px;
@@ -1206,7 +1209,6 @@ img {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
-  /* or 162% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1217,7 +1219,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero-title {
-    line-height: 1.61;
+    line-height: 1.36;
   }
 }
 .hero-image__btn {
