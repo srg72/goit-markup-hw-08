@@ -2,7 +2,7 @@
   background: var(--main-bg-ol);
 
 
-  &__container {
+  .footer__container {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
@@ -10,10 +10,12 @@
 
 
     @media screen and (min-width:768px) {
-      flex-wrap: wrap;
-      align-items: baseline;
-      flex-direction: row;
-      justify-content: space-around;
+      .footer__container {
+        flex-wrap: wrap;
+        align-items: baseline;
+        flex-direction: row;
+        justify-content: space-around;
+      }
     }
 
     @media screen and (min-width:1200px) {
@@ -22,12 +24,12 @@
     }
   }
 
-  &__list {
+  .footer__list {
     text-align: center;
 
   }
 
-  &__address {
+  .footer__address {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -37,7 +39,7 @@
     }
   }
 
-  &__logo {
+  .footer__logo {
     font-family: var(--font-secondary);
     font-weight: 700;
     font-size: 26px;
@@ -53,7 +55,7 @@
     color: var(--light-text);
   }
 
-  &__text--adress {
+  .footer__text--adress {
     display: inline-block;
     margin-bottom: 10px;
 
@@ -67,7 +69,7 @@
     color: var(--light-text);
   }
 
-  &__mail {
+  .footer__mail {
     display: inline-block;
     margin-bottom: 10px;
     font-style: normal;
@@ -81,7 +83,7 @@
     transition: color var(--anim-fast);
   }
 
-  &__phone {
+  .footer__phone {
     display: inline-block;
     font-style: normal;
     font-weight: 400;
@@ -95,10 +97,10 @@
     margin-bottom: 60px;
   }
 
-  &__mail:hover,
-  &__phone:hover,
-  &__mail:focus,
-  &__phone:focus {
+  .footer__mail:hover,
+  .footer__phone:hover,
+  .footer__mail:focus,
+  .footer__phone:focus {
     color: var(--light-text);
     outline: 0;
   }
@@ -118,18 +120,18 @@
 
   }
 
-  &__sosial-link {
+  .footer__sosial-link {
     display: flex;
     align-items: center;
     gap: 10px;
   }
 
-  &__link {
+  .footer__link {
     display: flex;
     justify-content: center;
   }
 
-  &__item {
+  .footer__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,26 +142,26 @@
     transition: background-color var(--anim-fast);
   }
 
-  &__icon {
+  .footer__icon {
     fill: var(--light-text);
     transition: fill var(--anim-fast);
   }
 
-  &__item:hover,
-  &__item:focus {
+  .footer__item:hover,
+  .footer__item:focus {
     background-color: var(--accent);
     outline: 0;
   }
 
-  &__link:hover &__icon {
+  .footer__link:hover .footer__icon {
     fill: var(--light-text);
   }
 
-  &__link:focus &__icon {
+  .footer__link:focus .footer__icon {
     fill: var(--light-text);
   }
 
-  &__sosial--text {
+  .footer__sosial--text {
     width: 145px;
     height: 16px;
     margin-bottom: 20px;
