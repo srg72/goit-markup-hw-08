@@ -2,13 +2,10 @@
   display: block;
   position: absolute;
   max-width: 450px;
-  min-height: 609px;
+  max-height: 609px;
 
   top: 221px;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 28px;
-  padding-bottom: 40px;
+  padding: 40px;
   background: var(--light-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -24,7 +21,7 @@
   @media screen and (min-width:1200px) {
     max-width: 528px;
     min-height: 581px;
-    padding-right: 40px;
+
   }
 
   &__btn {

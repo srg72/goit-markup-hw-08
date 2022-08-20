@@ -316,12 +316,9 @@ img {
   display: block;
   position: absolute;
   max-width: 450px;
-  min-height: 609px;
+  max-height: 609px;
   top: 221px;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 28px;
-  padding-bottom: 40px;
+  padding: 40px;
   background: var(--light-text);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -340,7 +337,6 @@ img {
   .modal {
     max-width: 528px;
     min-height: 581px;
-    padding-right: 40px;
   }
 }
 .modal__btn {
@@ -577,7 +573,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 7px;
+  gap: 8px;
   margin-bottom: 30px;
 }
 .form__icon-registraat {
@@ -1041,16 +1037,22 @@ img {
 .header .header__phone {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text);
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
+@media screen and (mix-width: 1200px) {
+  .header .header__maill,
+.header .header__phone {
+    font-size: 14px;
+  }
+}
 .header .header__phone--icon,
 .header .header__maill--icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
@@ -1159,24 +1161,16 @@ img {
   }
 }
 .hero-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/img1-sm@1x.webp);
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/img1-sm@1x.webp);
-  background-position: center;
+  max-width: 768px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(images/hero/img-hd_1.webp), url(images/hero/img-hd_1@2x.webp);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(images/hero/img-hd_1.webp), url(images/hero/img-hd_1@2x.webp);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: var(--hero-bg);
 }
 
-@media screen and (min-width: 768px) {
-  .hero-image {
-    background-image: url(../images/hero/img2-md@2x.webp);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero-image {
-    background-image: url(../images/hero/img2-bg@2x.webp);
-  }
-}
 .hero-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1185,17 +1179,25 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1600px;
-  padding-top: 118px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 360px;
+  padding-top: 178px;
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-text {
+    padding-top: 260px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-text {
     max-width: 696px;
-    padding-top: 200px;
+    padding-top: 280px;
     padding-bottom: 200px;
   }
 }
@@ -1204,9 +1206,11 @@ img {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
+  /* or 162% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: #FFFFFF;
   color: var(--light-text);
   margin-bottom: 30px;
 }

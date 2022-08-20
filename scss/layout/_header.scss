@@ -100,7 +100,7 @@
   .header__phone {
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
 
@@ -108,9 +108,17 @@
     transition: color var(--anim-fast);
   }
 
+  @media screen and (mix-width:1200px) {
+
+    .header__maill,
+    .header__phone {
+      font-size: 14px;
+    }
+  }
+
   .header__phone--icon,
   .header__maill--icon {
-    margin-right: 10px;
+    margin-right: 8px;
     fill: currentColor;
   }
 
