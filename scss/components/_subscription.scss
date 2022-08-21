@@ -4,7 +4,7 @@
   width: 100%;
 
   .subscription__text {
-    display: inline-block;
+    display: block;
     text-align: center;
     margin-bottom: 20px;
     font-style: normal;
@@ -15,8 +15,10 @@
     text-transform: uppercase;
 
     color: var(--light-text);
+  }
 
-    @media screen and (min-width:1200px) {
+  @media screen and (min-width:1200px) {
+    .subscription__text {
       text-align: left;
     }
   }
@@ -25,20 +27,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    @media screen and (min-width:1200px) {
+  @media screen and (min-width:1200px) {
+    .subscription__footer {
       flex-direction: row;
       align-items: baseline;
+      gap: 12px;
     }
-
   }
+
 
   .subscription__maill {
     width: 450px;
   }
 
-  .subscription__input {
+  @media screen and (min-width:1200px) {
+    .subscription__maill {
+      width: 358px;
+    }
+  }
 
+  .subscription__input {
+    display: block;
+    width: 100%;
+    max-height: 50px;
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
@@ -48,6 +61,12 @@
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: border var(--anim-fast);
+  }
+
+  @media screen and (min-width:1200px) {
+    .subscription__input {
+      margin-bottom: 0;
+    }
   }
 
   .subscription__input-text::placeholder {
@@ -65,7 +84,7 @@
     height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 29px;
+    padding-left: 28px;
     padding-right: 28px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
