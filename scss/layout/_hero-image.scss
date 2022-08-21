@@ -38,21 +38,23 @@
 
 
     max-width: 360px;
-    margin-top: 80px;
     padding-top: 118px;
     padding-bottom: 118px;
-
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
 
 }
 
-
+@media screen and (min-width:1200px) {
+    .hero-text {
+        margin-top: 80px;
+    }
+}
 
 @media screen and (min-width:1200px) {
     .hero-text {
         display: flex;
-        margin-top: 80px;
         padding-top: 200px;
         padding-bottom: 200px;
 
