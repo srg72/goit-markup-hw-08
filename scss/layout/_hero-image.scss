@@ -22,7 +22,9 @@
         width: 100%;
         height: 400px;
 
-        background-image: url(../../images/hero/img-hd_1.webp), url(../../images/hero/img-hd_1@2x.webp), url(../../images/hero/img-hd_1.jpg), url(../../images/hero/img-hd_1@2x.jpg);
+        background-image: linear-gradient(to bottom,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../../images/hero/img-hd_1.webp), url(../../images/hero/img-hd_1@2x.webp), url(../../images/hero/img-hd_1.jpg), url(../../images/hero/img-hd_1@2x.jpg);
 
     }
 }
