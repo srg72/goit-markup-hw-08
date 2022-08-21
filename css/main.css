@@ -174,7 +174,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 1.44;
   letter-spacing: 0.03em;
   color: var(--light-text);
 }
@@ -214,6 +214,15 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-set {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1511,19 +1520,18 @@ img {
 
 .main__filters {
   min-width: 400px;
-  padding-top: 60px;
+  padding-top: 120px;
   padding-bottom: 60px;
-  margin-top: 58px;
 }
 
 @media screen and (min-width: 768px) {
   .main__filters {
-    margin-top: 78px;
+    padding-top: 140px;
   }
 }
 @media screen and (min-width: 1200px) {
   .main__filters {
-    padding-top: 94px;
+    padding-top: 174px;
     padding-bottom: 94px;
   }
 }
@@ -1542,6 +1550,11 @@ img {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .button--click3 {
+    margin-right: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .main__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 15px;

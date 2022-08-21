@@ -21,6 +21,12 @@
     cursor: pointer;
   }
 
+  // @media screen and (min-width:768px) {
+  //   &__border {
+  //     min-width: 146px;
+  //   }
+  // }
+
   &__name {
     font-style: normal;
     font-weight: 700;
@@ -74,7 +80,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 1.44;
 
     letter-spacing: 0.03em;
 
@@ -118,9 +124,18 @@
   flex-basis: calc((100% - var(--indent) * (var(--cet) - 1)) / var(--cet));
 }
 
+
 @media screen and (min-width: 768px) {
   .card-set {
     justify-content: space-between;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set {
+    justify-content: space-between;
+    padding-top: 50px;
   }
 }
 

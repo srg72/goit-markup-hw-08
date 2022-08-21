@@ -30,36 +30,41 @@
 
   <header class="header" data-header>
     <div class="header__container container">
-      <a class="header__logo link" href="./index.html" lang="en">Web<span class="header__logo--stud">Studio</span>
+      <a class="header__logo link" href="#" lang="en">Web<span class="header__logo--stud">Studio</span>
       </a>
-      <nav class="nav">
-        <ul class="nav__list list">
-          <li class="nav__item">
-            <a class="nav__link link" href="./index.html">Студія</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link nav__link--active link" href="./portfolio.html">Портфоліо</a>
-          </li>
+      <div class="header__top">
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
+            </li>
 
-          <li class="nav__item">
-            <a class="nav__link link" href="./index.html">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header__contact list">
-        <li class="header__contact-item">
-          <a class="header__mail link" href="mailto:info@devstudio.com">
-            <svg width="16" height="12" class="header__mail--icon">
-              <use href="./images/icons.svg#envelope"></use>
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact list">
+          <a class="header__maill link" href="mailto:info@devstudio.com">
+            <svg width="14" height="10" class="header__maill--icon">
+              <use href="./images/icons.svg#hdr1"></use>
             </svg>info@devstudio.com</a>
-        </li>
-        <li class="header__contact-item">
-          <a class="header__phone link" href="tel:380961111111"><svg width="10" height="16" class="header__phone--icon">
-              <use href="./images/icons.svg#vector"></use>
+          </li>
+          <a class="header__phone link" href="tel:380961111111"><svg width="10" height="14" class="header__phone--icon">
+              <use href="./images/icons.svg#Vectorhdr_2"></use>
             </svg>
             38 096 111 11 11</a>
-        </li>
-      </ul>
+          </li>
+        </div>
+      </div>
+      <button class="menu-btn" type="button" data-menu-open>
+        <svg class="menu-close-icon" width="40" height="40">
+          <use href="./images/icons.svg#menu_40pxmenu_1"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <!-- Content portfolio -->
@@ -68,13 +73,13 @@
       <div class="container">
         <ul class="main__title list">
           <li class="main__item">
-            <button class="button button--click" type="button">Все</button>
+            <button class="button button--click" type="button">Усі</button>
           </li>
           <li class="main__item">
-            <button class="button button--click2" type="button">Веб-сайты</button>
+            <button class="button button--click2" type="button">Веб-сайти</button>
           </li>
           <li class="main__item">
-            <button class="button button--click3" type="button">Приложения</button>
+            <button class="button button--click3" type="button">Додатки</button>
           </li>
           <li class="main__item">
             <button class="button button--click4" type="button">Дизайн</button>
@@ -100,9 +105,9 @@
               </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
@@ -127,15 +132,15 @@
               </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
             <div class="card-set__border">
-              <h3 class="card-set__name">
-                Постер<span lang="en">New Orlean vs Golden Star</span>
+              <h3 class="card-set__name card-set__name--text">
+                Постер<span lang="en">New Orlean vs Golden Star&shy;</span>
               </h3>
               <p class="card-set__text">Дизайн</p>
             </div>
@@ -156,9 +161,9 @@
               </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
@@ -166,7 +171,7 @@
               <h3 class="card-set__name">
                 Ресторан<span lang="en"> Seafood</span>
               </h3>
-              <p class="card-set__text">Приложение</p>
+              <p class="card-set__text">Додаток</p>
             </div>
           </li>
           <li class="card-set__link">
@@ -183,18 +188,17 @@
 
                 <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Маркетинг" />
               </picture>
-              <img class="team__photo" src="" alt="" width="270" />
-              </picture>
+
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
             <div class="card-set__border">
-              <h3 class="card-set__name">Проект<span lang="en">Prime</span></h3>
+              <h3 class="card-set__name">Проєкт<span lang="en">Prime</span></h3>
               <p class="card-set__text">Маркетинг</p>
             </div>
           </li>
@@ -210,19 +214,19 @@
                 <source srcset="images/portfolio/img-5_sm@1x.jpg, images/portfolio/img-5_sm@2x.jpg"
                   media="(max-width: 767px)" type="image/webp">
 
-                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Приложение" />
+                <img class="card-set__project" src="images/portfolio/imgphoto-1.jpg" alt="Додаток" />
               </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
             <div class="card-set__border">
-              <h3 class="card-set__name">Проект<span lang="en">Boxes</span></h3>
-              <p class="card-set__text">Приложение</p>
+              <h3 class="card-set__name">Проєкт<span lang="en">Boxes</span></h3>
+              <p class="card-set__text">Додаток</p>
             </div>
           </li>
           <li class="card-set__link">
@@ -241,9 +245,9 @@
               </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
@@ -270,15 +274,15 @@
               </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
             <div class="card-set__border">
               <h3 class="card-set__name">
-                Издание <span lang="en">Limited Edition</span>
+                Видання <span lang="en">Limited Edition</span>
               </h3>
               <p class="card-set__text">Дизайн</p>
             </div>
@@ -299,14 +303,14 @@
               </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
             <div class="card-set__border">
-              <h3 class="card-set__name">Проект LAB</h3>
+              <h3 class="card-set__name">Проєкт LAB</h3>
               <p class="card-set__text">Маркетинг</p>
             </div>
           </li>
@@ -326,15 +330,15 @@
               </picture>
               <div class="card-set__overlay">
                 <p class="card-set__overlay-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                  відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
                 </p>
               </div>
             </div>
             <div class="card-set__border">
               <h3 class="card-set__name">Growing Business</h3>
-              <p class="card-set__text">Приложение</p>
+              <p class="card-set__text">Додаток</p>
             </div>
           </li>
         </ul>
@@ -347,15 +351,15 @@
       <div class="footer__list footer__address">
         <a class="footer__logo logo link" href="./index.html" lang="en">Web<span
             class="footer footer--stud">Studio</span></a>
-        <address class="footer__address">
-          <p class="footer__text--adress">г. Киев, пр-т Леси Украинки, 26</p>
+        <p class="footer__text--adress">м. Київ, пр-т Лесі Українки, 26</p>
 
-          <a class="footer__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <address class="footer__address">
+          <a class="footer__maill link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           <a class="footer__phone link" href="tel:380961111111">38 096 111 11 11</a>
         </address>
       </div>
       <div class="footer__sosial">
-        <h3 class="footer__sosial--text">присоединяйтесь</h3>
+        <h3 class="footer__sosial--text">приєднуйтесь</h3>
         <ul class="list footer__sosial-link">
           <li class="footer__link">
             <a class="footer__item link" href="" target="_blank" rel="noopener noreferrer" aria-label="Инстаграм">
@@ -388,14 +392,14 @@
         </ul>
       </div>
       <form action="#" class="subscription">
-        <h3 class="subscription__text">Подпишитесь на рассылку</h3>
+        <h3 class="subscription__text">Підпишіться на розсилку</h3>
         <div class="subscription__footer">
-          <label class="subscription__email">
-            <input class="subscription__input subscription__input-text" type="email" name="user-email"
+          <label class="subscription__maill">
+            <input class="subscription__input subscription__input-text" type="maill" name="user-maill"
               placeholder="E-mail" />
           </label>
           <button class="subscription__btn-forum subscription__btn-text" type="submit">
-            Подписаться<svg class="subscription__icon" width="24" height="24">
+            Підписатися<svg class="subscription__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
@@ -403,8 +407,104 @@
       </form>
     </div>
   </footer>
-  <div class="menu-overlay is-open" data-menu>
+  <!-- Modal window -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal__btn" type="button" data-modal-close>
+        <svg class="modal__btn-icon" width="18" height="18">
+          <use href="./images/icons.svg#close-black"></use>
+        </svg>
+      </button>
+      <!-- Форма -->
+      <form class="form">
+        <strong class="form__title">Залиште свої дані, ми вам передзвонимо</strong>
+        <label class="form__group">
+          <span class="form__label">Ім'я</span>
+          <input class="form__input" type="text" name="user-name" />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#person-black"></use>
+          </svg>
+        </label>
+        <label class="form__group">
+          <span class="form__label">Телефон</span>
+          <input class="form__input" type="tel" name="user-phone" />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#phone-black"></use>
+          </svg>
+        </label>
 
+        <label class="form__group">
+          <span class="form__label">Пошта</span>
+          <input class="form__input" type="email" name="user-email" />
+          <svg class="form__icon" width="18" height="18">
+            <use href="./images/icons.svg#email-black"></use>
+          </svg>
+        </label>
+
+        <label class="form__comment">
+          <span class="form__label-comment">Коментар</span>
+          <textarea class="form__modal-comment form__comment-text" name="comment" rows="5"
+            placeholder="Введите текст"></textarea>
+        </label>
+        <label class="form__form-agreement">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="agreement" />
+          <svg class="form__icon-registrat" width="16" height="15">
+            <use class="form__icon-uncheck" href="./images/icons.svg#Checkbox"></use>
+            <use class="form__icon-check" href="./images/icons.svg#icon-check"></use>
+          </svg>
+          <span class="form__form-agreement--text">
+            Погоджуюся з розсилкою та приймаю
+            <a class="form__form-agreement-link" href="">Умови договору</a>
+          </span>
+        </label>
+        <button class="form__btn--forum form__btn--text" type="submit"> Відправити
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+
+  <div class="menu-overlay is-open" data-menu>
+    <div class="menu-container">
+      <button class="menu-btn" type="button" data-menu-close>
+        <svg class="menu-close-icon" width="40" height="40">
+          <use href="./images/icons.svg#close_40px"></use>
+        </svg>
+      </button>
+      <ul class="mobile-nav__list list">
+        <li class="mobile-nav__item">
+          <a href="./index.html" class="mobile-link link">Студія</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="./portfolio.html" class="mobile-link  mobile-link--active link">Портфоліо</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="" class="mobile-link link">Контакти</a>
+        </li>
+      </ul>
+      <div class="mobile-contacts">
+        <a class="mobile-contacts__link mobile-contacts__phone link" href="tel:380961111111">
+          +38 096 111 11 11</a>
+        <a class="mobile-contacts__link mobile-contacts__maill link" href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+      </div>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">LinkedIn</a>
+        </li>
+      </ul>
+
+    </div>
   </div>
   <script src="./js/header-scroll.js"></script>
   <script src="./js/modal.js"></script>

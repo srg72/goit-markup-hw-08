@@ -1,20 +1,19 @@
 .main__filters {
   min-width: 400px;
-  padding-top: 60px;
+  padding-top: 120px;
   padding-bottom: 60px;
-  margin-top: 58px;
 }
 
 @media screen and (min-width:768px) {
   .main__filters {
-    margin-top: 78px;
+    padding-top: 140px;
   }
 }
 
 
 @media screen and (min-width:1200px) {
   .main__filters {
-    padding-top: 94px;
+    padding-top: 174px;
     padding-bottom: 94px;
   }
 }
@@ -27,6 +26,13 @@
 .main__item {
   display: flex;
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .button--click3 {
+    margin-right: 30px;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -48,3 +54,7 @@
   color: var(--light-text);
   background-color: var(--accent);
 }
+
+// .card-set__name--text {
+//   line-height: 1.1;
+// }
