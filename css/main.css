@@ -971,6 +971,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   left: 0;
   z-index: 3;
@@ -979,8 +982,7 @@ img {
   background-color: var(--light-text);
   border-bottom: 1px solid var(--lidht-bg-ol);
 }
-
-.header__logo {
+.header .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -990,77 +992,54 @@ img {
   font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  outline: 0;
   color: var(--accent);
 }
-
-.header__logo--stud {
+.header .header__logo .header__logo--stud {
   color: var(--main-tex-ol);
 }
-
 @media screen and (min-width: 768px) {
-  .header__logo--top {
-    display: inline-block;
+  .header .header__logo {
     margin-right: 88px;
-    line-height: 1.16;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__logo--top {
-    display: inline-block;
+  .header .header__logo {
     margin-right: 93px;
   }
 }
-.header__container {
+.header .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   z-index: 99;
 }
-.header__container .header__top {
+.header .header__container .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
 }
-@media screen and (min-width: 768px) {
-  .header__container .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    margin: 0;
+@media screen and (max-width: 767px) {
+  .header .header__container .header__top {
+    display: none;
   }
 }
-@media screen and (min-width: 479px) {
-  .header__container .header {
-    min-width: 320px;
-  }
-}
-
-.header__contact {
+.header .header__container .header__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.header__maill {
+.header .header__container .header__maill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1069,17 +1048,15 @@ img {
           align-items: center;
   margin-left: auto;
 }
-
-.header__maill:hover,
-.header__phone:focus,
-.header__maill:focus,
-.header__phone:hover {
+.header .header__container .header__maill:hover,
+.header .header__container .header__phone:focus,
+.header .header__container .header__maill:focus,
+.header .header__container .header__phone:hover {
   color: var(--accent);
   outline: 0;
 }
-
-.header__maill,
-.header__phone {
+.header .header__maill,
+.header .header__phone {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1089,15 +1066,14 @@ img {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
 @media screen and (mix-width: 1200px) {
-  .header__maill,
-.header__phone {
+  .header .header__maill,
+.header .header__phone {
     font-size: 14px;
   }
 }
-.header__phone--icon,
-.header__maill--icon {
+.header .header__phone--icon,
+.header .header__maill--icon {
   margin-right: 8px;
   fill: currentColor;
 }
@@ -1107,11 +1083,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1200px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1144,6 +1116,12 @@ img {
 @media screen and (max-width: 767px) {
   .header__contact {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+    line-height: 1.16;
   }
 }
 .nav {
