@@ -58,15 +58,15 @@
 
 @media screen and (min-width:768px) {
     .hero-text {
-        margin-top: 80px;
+        padding-top: 198px;
     }
 }
 
 @media screen and (min-width:1200px) {
     .hero-text {
         display: flex;
-        margin-top: 80px;
-        padding-top: 200px;
+
+        padding-top: 280px;
         padding-bottom: 200px;
 
         max-width: 696px;
