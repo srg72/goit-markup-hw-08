@@ -979,33 +979,35 @@ img {
   background-color: var(--light-text);
   border-bottom: 1px solid var(--lidht-bg-ol);
 }
-.header .header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+.header__logo {
   font-family: var(--font-secondary);
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  outline: 0;
   color: var(--accent);
 }
-.header .header__logo .header__logo--stud {
+
+.header__logo--stud {
   color: var(--main-tex-ol);
 }
+
 @media screen and (min-width: 768px) {
-  .header .header__logo {
+  .header__logo--top {
+    display: inline-block;
     margin-right: 88px;
+    line-height: 1.16;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header .header__logo {
+  .header__logo--top {
+    display: inline-block;
     margin-right: 93px;
   }
 }
-.header .header__container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1020,7 +1022,7 @@ img {
   padding-right: 15px;
   z-index: 99;
 }
-.header .header__container .header__top {
+.header__container .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1028,22 +1030,40 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+.header__container .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 @media screen and (min-width: 768px) {
-  .header .header__container .header {
-    position: static;
+  .header__container .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media screen and (max-width: 767px) {
-  .header .header__container .header__top {
-    display: none;
-  }
-}
-.header .header__container .header__contact {
+
+.header__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.header .header__container .header__maill {
+
+.header__maill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1052,15 +1072,17 @@ img {
           align-items: center;
   margin-left: auto;
 }
-.header .header__container .header__maill:hover,
-.header .header__container .header__phone:focus,
-.header .header__container .header__maill:focus,
-.header .header__container .header__phone:hover {
+
+.header__maill:hover,
+.header__phone:focus,
+.header__maill:focus,
+.header__phone:hover {
   color: var(--accent);
   outline: 0;
 }
-.header .header__maill,
-.header .header__phone {
+
+.header__maill,
+.header__phone {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1070,14 +1092,15 @@ img {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
+
 @media screen and (mix-width: 1200px) {
-  .header .header__maill,
-.header .header__phone {
+  .header__maill,
+.header__phone {
     font-size: 14px;
   }
 }
-.header .header__phone--icon,
-.header .header__maill--icon {
+.header__phone--icon,
+.header__maill--icon {
   margin-right: 8px;
   fill: currentColor;
 }
@@ -1087,7 +1110,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 1200px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1099,6 +1121,7 @@ img {
     gap: 10px;
     padding-top: 21px;
     padding-bottom: 21px;
+    margin-right: 0;
     margin-left: 96px;
   }
 }
@@ -1120,12 +1143,6 @@ img {
 @media screen and (max-width: 767px) {
   .header__contact {
     display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__logo {
-    margin-right: 88px;
-    line-height: 1.16;
   }
 }
 .nav {
@@ -1830,7 +1847,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -1838,6 +1855,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text);
+}
+@media screen and (min-width: 1200px) {
+  .partners .partners__text {
+    margin-bottom: 50px;
+  }
 }
 .partners__list {
   display: -webkit-box;
