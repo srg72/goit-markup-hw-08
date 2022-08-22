@@ -19,14 +19,21 @@
   gap: var(--indent);
 }
 
+.feature__section {
+  max-width: 450px;
+}
+
 @media screen and (max-width: 767px) {
   .feature__section:not(:last-child) {
     margin-bottom: 30px;
+    max-width: 354px;
+
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature__section {
+    max-width: 270px;
     width: calc((100% - var(--indent)*(var(--feature-cont) - 1))/var(--feature-cont));
   }
 }
@@ -43,14 +50,12 @@
   justify-content: center;
   margin-bottom: 30px;
   background-color: var(--secondary-bg);
-
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .feature__icon {
-  max-width: 450px;
-  height: 120px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+
   fill: var(--main-text);
 }
 
