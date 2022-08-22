@@ -1362,11 +1362,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .feature__section:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 767px) {
   .feature__section {
     max-width: 354px;
   }
