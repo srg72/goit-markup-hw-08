@@ -967,7 +967,7 @@ img {
 }
 
 .header {
-  position: fixed;
+  position: static;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1005,6 +1005,7 @@ img {
   font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-right: 0;
   outline: 0;
   color: var(--accent);
 }
