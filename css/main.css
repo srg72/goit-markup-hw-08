@@ -971,9 +971,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   top: 0;
   left: 0;
   z-index: 3;
@@ -1015,6 +1012,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -1027,7 +1027,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .header .header__container .header {
+    position: static;
+  }
 }
 @media screen and (max-width: 767px) {
   .header .header__container .header__top {

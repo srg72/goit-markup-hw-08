@@ -1,7 +1,6 @@
 .header {
   position: fixed;
   display: flex;
-  align-items: center;
   top: 0;
   left: 0;
   z-index: 3;
@@ -46,7 +45,7 @@
   .header__container {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -56,15 +55,14 @@
     .header__top {
       display: flex;
       align-items: center;
-      margin: 0;
 
     }
 
-    // @media screen and (min-width:768px) {
-    //   .header {
-    //     position: static;
-    //   }
-    // }
+    @media screen and (min-width:768px) {
+      .header {
+        position: static;
+      }
+    }
 
     // @media screen and (min-width:768px) {
     //   .header {
