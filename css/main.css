@@ -984,7 +984,6 @@ img {
 }
 .header .header__logo {
   display: inline-block;
-  max-width: 145px;
   font-family: var(--font-secondary);
   font-style: normal;
   font-weight: 700;
@@ -996,6 +995,11 @@ img {
 }
 .header .header__logo .header__logo--stud {
   color: var(--main-tex-ol);
+}
+@media screen and (min-width: 768px) {
+  .header .header__logo {
+    margin-right: 88px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header .header__logo {
