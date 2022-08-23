@@ -979,12 +979,16 @@ img {
   top: 0;
   left: 0;
   z-index: 3;
-  width: 100%;
   min-height: 60px;
   background-color: var(--light-text);
   border-bottom: 1px solid var(--lidht-bg-ol);
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+}
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1364,6 +1368,11 @@ img {
 
 @media screen and (max-width: 767px) {
   .feature__section {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature__section {
     max-width: 354px;
   }
 }
@@ -1458,10 +1467,10 @@ img {
   color: var(--main-text);
 }
 @media screen and (min-width: 1200px) {
-  .team {
-    margin-bottom: 50px;
+  .team__title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 .team__list {
