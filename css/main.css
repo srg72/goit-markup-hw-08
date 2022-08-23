@@ -998,6 +998,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   z-index: 99;
+  width: 100%;
 }
 .header__container .header__logo {
   display: -webkit-box;
