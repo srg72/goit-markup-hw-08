@@ -1,6 +1,7 @@
 .header {
   position: fixed;
   display: flex;
+
   top: 0;
   left: 0;
   z-index: 3;
@@ -12,6 +13,7 @@
 
   .header__logo {
     display: flex;
+    max-width: 145px;
     // padding: 22px 0;
     font-family: var(--font-secondary);
     font-style: normal;
@@ -29,28 +31,33 @@
     }
   }
 
-  @media screen and (min-width:768px) {
-    .header__logo {
-      margin-right: 88px;
-    }
-  }
+  // @media screen and (min-width:768px) {
+  //   .header__logo {
+  //     margin-right: 88px;
+  //   }
+  // }
 
-  @media screen and (min-width:1200px) {
-    .header__logo {
-      margin-right: 93px;
-    }
-  }
+  // @media screen and (min-width:1200px) {
+  //   .header__logo {
+  //     margin-right: 93px;
+  //   }
+  // }
 
 
   .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: start;
+
     padding-left: 15px;
     padding-right: 15px;
     z-index: 99;
+
     // background-color: var(--light-text);
+    .header__nav {
+      display: flex;
+      align-items: center;
+    }
 
     .header__top {
       display: flex;
@@ -81,10 +88,29 @@
       display: flex;
     }
 
+    @media screen and (max-width:767px) {
+
+      .header__contact {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width:1200px) {
+      .header__contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-left: 315px;
+      }
+    }
+
     .header__maill {
       display: flex;
       align-items: center;
-      margin-left: auto;
+      // margin-left: auto;
     }
 
     .header__maill:hover,
@@ -126,12 +152,12 @@
 
 
 
-@media screen and (min-width:1200px) {
-  .header__container {
-    align-items: center;
-    max-width: 1200px;
-  }
-}
+// @media screen and (min-width:1200px) {
+//   .header__container {
+//     align-items: center;
+//     max-width: 1200px;
+//   }
+// }
 
 @media screen and (min-width:768px) {
   .header__contact {
@@ -143,25 +169,6 @@
   }
 }
 
-@media screen and (min-width:1200px) {
-  .header__contact {
-
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-left: 315px;
-  }
-}
-
-
-@media screen and (max-width:767px) {
-
-  .header__contact {
-    display: none;
-  }
-}
 
 @media screen and (min-width:768px) {
   .header__logo {
