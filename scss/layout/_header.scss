@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   display: flex;
-
+  justify-content: start;
   top: 0;
   left: 0;
   z-index: 3;
@@ -12,7 +12,7 @@
   border-bottom: 1px solid var(--lidht-bg-ol);
 
   .header__logo {
-    display: flex;
+    display: inline-block;
     max-width: 145px;
     // padding: 22px 0;
     font-family: var(--font-secondary);
@@ -71,11 +71,6 @@
       }
     }
 
-    // @media screen and (min-width:768px) {
-    //   .header {
-    //     min-width: 768px;
-    //   }
-    // }
 
     @media screen and (max-width:767px) {
       .header__top {
@@ -149,15 +144,6 @@
   }
 
 }
-
-
-
-// @media screen and (min-width:1200px) {
-//   .header__container {
-//     align-items: center;
-//     max-width: 1200px;
-//   }
-// }
 
 @media screen and (min-width:768px) {
   .header__contact {
