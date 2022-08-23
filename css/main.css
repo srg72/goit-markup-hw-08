@@ -683,7 +683,7 @@ img {
   }
 }
 .subscription .subscription__maill {
-  width: 100%;
+  max-width: 450px;
 }
 @media screen and (min-width: 768px) {
   .subscription .subscription__maill {
@@ -1710,7 +1710,6 @@ img {
   color: var(--footer-contacts);
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
-  max-width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .footer .footer__maill {
