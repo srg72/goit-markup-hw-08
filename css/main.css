@@ -996,6 +996,11 @@ img {
 .header .header__logo .header__logo--stud {
   color: var(--main-tex-ol);
 }
+@media screen and (min-width: 1200px) {
+  .header .header__logo {
+    margin-right: 93px;
+  }
+}
 .header .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
