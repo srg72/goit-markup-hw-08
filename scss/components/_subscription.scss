@@ -42,6 +42,12 @@
     width: 100%;
   }
 
+  @media screen and (min-width:768px) {
+    .subscription__maill {
+      max-width: 450px;
+    }
+  }
+
   @media screen and (min-width:1200px) {
     .subscription__maill {
       width: 358px;

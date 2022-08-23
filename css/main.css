@@ -685,6 +685,11 @@ img {
 .subscription .subscription__maill {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .subscription .subscription__maill {
+    max-width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscription .subscription__maill {
     width: 358px;
