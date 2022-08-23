@@ -98,6 +98,7 @@
 
     color: var(--footer-contacts);
     transition: color var(--anim-fast);
+    max-width: 450px;
   }
 
   @media screen and (min-width:1200px) {

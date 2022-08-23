@@ -1710,6 +1710,7 @@ img {
   color: var(--footer-contacts);
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
+  max-width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .footer .footer__maill {
