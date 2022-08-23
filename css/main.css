@@ -1337,6 +1337,7 @@ img {
 
 .content {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1925,21 +1926,21 @@ img {
   border: 1px solid var(--sosial-icon);
   border-radius: 4px;
 }
-@media screen and (min-width: 1200px) {
-  .partners .partners-icon {
-    width: 170px;
-    height: 92px;
-  }
-}
 @media screen and (min-width: 768px) {
   .partners .partners-icon {
-    width: 226px;
+    max-width: 226px;
     height: 92px;
   }
 }
 @media screen and (max-width: 767px) {
   .partners .partners-icon {
-    width: 210px;
+    max-width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partners .partners-icon {
+    max-width: 170px;
     height: 92px;
   }
 }

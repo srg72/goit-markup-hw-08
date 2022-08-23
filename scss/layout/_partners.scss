@@ -57,29 +57,28 @@
     border-radius: 4px;
   }
 
-  @media screen and (min-width: 1200px) {
-    .partners-icon {
-      width: 170px;
-      height: 92px;
-    }
-  }
-
 
   @media screen and (min-width: 768px) {
     .partners-icon {
-      width: 226px;
+      max-width: 226px;
       height: 92px;
     }
   }
 
   @media screen and (max-width: 767px) {
     .partners-icon {
-      width: 210px;
+      max-width: 210px;
       height: 92px;
     }
 
   }
 
+  @media screen and (min-width: 1200px) {
+    .partners-icon {
+      max-width: 170px;
+      height: 92px;
+    }
+  }
 
   &__item--logo {
     fill: var(--sosial-icon);
