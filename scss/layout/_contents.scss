@@ -1,8 +1,5 @@
 .content {
   padding-top: 60px;
-  padding-bottom: 60px;
-
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -20,7 +17,7 @@
 }
 
 .feature__section {
-  max-width: 100%;
+  max-width: 450px;
 }
 
 // @media screen and (max-width: 767px) {
@@ -30,7 +27,7 @@
 //   }
 // }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .feature__section {
     max-width: 354px;
 
